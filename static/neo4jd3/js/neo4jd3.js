@@ -973,7 +973,7 @@ function Neo4jD3(_selector, _options) {
     }
 
     function updateWithNeo4jData(neo4jData) {
-        var d3Data = neo4jDataToD3DataV2(neo4jData);
+        var d3Data = neo4jDataToD3Data(neo4jData);
         updateWithD3Data(d3Data);
     }
 

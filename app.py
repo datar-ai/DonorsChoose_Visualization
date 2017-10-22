@@ -80,8 +80,8 @@ def graphdata():
                 i += 1
             else:
                 source = source["id"]
-            rels.append({"startNode": source, "endNode": target})
-    return Response(dumps({"nodes": nodes, "relationships": rels}),
+            rels.append({"source": source, "target": target})
+    return Response(dumps({"nodes": nodes, "links": rels}),
                     mimetype="application/json")
 
 
